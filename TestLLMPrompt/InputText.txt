@@ -1,0 +1,46 @@
+﻿WEBVTT
+
+00:00:00.000 --> 00:00:20.000
+Okay, so what we're going to do here is we're going to, first I'm going to introduce myself. My name's Zach. I'm going to sit here and talk about nothing for a minute, talk about the fact that I'm sitting here in this apartment. It's very quiet. I'm looking around, taking notes on things not relevant to this call at all, sketching a little bit in my
+
+00:00:20.000 --> 00:00:40.000
+Notepad. Not really much of anything. If there are other people here, be saying hello, how we doing? Jolly good. Okay, that's great. Good. Grand. That's even wonderful. Okay, so what am I actually doing here? Well, actually what I'm doing is I'm setting up this video so that I can test out some of this functionality for generating an RRD. Anyway, so
+
+00:01:00.000 --> 00:01:20.000
+We're kind of goofing off a bit. It's got a couple of minutes have gone by. Now let's see if we can get into the actual discussion here. Okay, so what we're doing here today is we're creating a Reddit account. And so I'll just go ahead and I'll jump straight into what we do here. So the first thing I'm going to do is I'm going to open the browser.
+
+00:01:20.000 --> 00:01:40.000
+In this case, the browser is Firefox. It just so happens to be on private browsing. It's not really necessary which browser you use, but I'm using Firefox and private browsing. And we're going to navigate to www.reddit.com/www.reddit.com/login.
+
+00:02:00.000 --> 00:02:20.000
+navigate to reddit.com slash login. And we need to create an account. So it's going to say new to Reddit, and then we're going to click sign up, right? And we don't have a account, so we're going to enter an email here. And I'm just going to put in an email that might be somebody's, who knows? Let's put in dump truck 1999.
+
+00:02:20.000 --> 00:02:40.000
+dot goodstuff at gmail.com. Okay. And then after we put in our email address here into the email field, we're going to hit continue. And it's going to say enter the six digit code we sent to dumptruck1999.goodstuff at gmail.com. Now that's just our email address, but this will be
+
+00:02:40.000 --> 00:03:00.000
+somebody else's email. So we're going to skip for now. Now it says create username and password into the username field. We're going to enter the username that's in the username column that we have. And in this case, ours is guttergrunt underscore flex and stunt.
+
+00:03:20.000 --> 00:03:40.000
+Too many characters. So one is Gutter, Grunt, Flex, and Stunt. Too many characters here. So the characters are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20. Gutter, Grunt, Flex, Stunt. And our password is going to be
+
+00:04:00.000 --> 00:04:20.000
+What's in the password column? It's going to be the at sign. The at sign. Oh, the password is what's in the column, the password column. And then we're going to hit continue.
+
+00:04:20.000 --> 00:04:40.000
+And it's going to say some things about yourself. Tell us about yourself. We're going to hit skip. And then on the interest, you'll pick the interest that is in the interest column. And in this case today, the interest that we have for dump truck is.
+
+00:05:00.000 --> 00:05:20.000
+Wizards. Then we're going to hit continue. It's going to come up and say personalizing your experience. And there we have it. We have a new Reddit account created for us. And then we're going to click on the Reddit avatar icon here.
+
+00:05:20.000 --> 00:05:40.000
+And we're going to click log out. And then close the browser. And then we've completed the process. Now I sit here for a few minutes to maybe talk about Dawn soap. I'm a big fan of Dawn because it's really good and really gentle soap, but cuts grease really well. How do they do it? You know, you can, I mean, shoot.
+
+00:06:00.000 --> 00:06:20.000
+It even shows you right here on the bottle that you can clean baby ducks that have oil spilt all over them. Did you believe it? That's a great thing about Dawn. Another thing that I really like are these 360 cameras. I've got the Insta360, just the X3. I know the X4 is out, but
+
+00:06:20.000 --> 00:06:40.000
+I'm a little bit behind, but lots of good times to be had there. And you put it on your little, you know, selfie stick guy here. You can stretch it on out. You get 360 degree view of whatever you're doing. One time Sal, Igor and I hooked up one of these above the ping pong table. We got our ping pong match in a 360 view.
+
+00:07:00.000 --> 00:07:20.000
+It was all right. So anyway, that's a little bit of that. And we're going to shut this baby down here. A lot of great fun with you guys. And that'll be all. Thanks everybody. How do I stop recording? Stop recording. Stop recording.

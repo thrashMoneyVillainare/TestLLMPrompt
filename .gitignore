@@ -1,0 +1,47 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.tlog
+
+# NuGet Packages
+packages/
+*.nupkg
+# Ignore NuGet package restore cache
+.nuget/
+
+# Test results
+TestResults/
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Visual Studio temporary files
+*.vsidx
+*.vssettings
+*.vspscc
+*.vssscc
+
+# MSBuild
+MSBuild/
+*.csproj.*.backup
+
+# Other common ignores
+*.bak
+*.tmp
+*.swp
+Thumbs.db
+.DS_Store

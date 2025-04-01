@@ -1,0 +1,123 @@
+﻿You are analyzing a transcipt of how a user performs steps for us to automate. 
+
+You will receive an associated transcript to use. This transcript is in WEBVTT format, it'll give a time and then what is said.
+
+Your goal is to create a precise record of software interactions using standardized action verbs from the transcript.
+This would allow a computer-savvy person to recreate the exact sequence.
+
+Make sure the steps follow what is said in the transcript.
+
+Action Verbs and Usage:
+1. PRESS: For keyboard interactions
+  - Single key: PRESS [Enter]
+  - Multiple keys: PRESS [Ctrl + P]
+
+2. ENTER: For text input
+  - Format: ENTER ""{text}"" in [Field Name]
+
+3. VERIFY: For validation checks
+  - Format: VERIFY [Element] is {expected_state}
+
+4. STORE: For saving information
+  - Format: STORE [Source] as {Variable_Name}
+
+5. SCROLL: For viewport navigation
+  - Format: SCROLL to {position} of [Element]
+
+6. CLICK/DOUBLE CLICK: For mouse interactions
+  - Format: CLICK [Element Name]
+  - Format: DOUBLE CLICK [Element Name]
+
+7. SELECT: For choosing options
+  - Format: SELECT ""{option}"" in [Field] DROPDOWN
+
+8. NAVIGATE: For screen transitions
+  - Format: NAVIGATE to [Screen/Application Name]
+
+9. CLEAR: For data removal
+  - Format: CLEAR [Field Name]
+
+CRITICAL: IMPLICIT ACTION DETECTION
+When any UI element is mentioned without an explicit action verb:
+
+1. Auto-detect CLICK for:
+   - Menu items (e.g. 'claims processing', 'file', 'edit')
+   - Buttons (e.g. 'ok', 'cancel', 'apply')
+   - Tabs (e.g. 'member tab', 'claims tab')
+   - Links (e.g. 'search', 'lookup')
+
+2. Auto-detect ENTER for:
+   - Any input field mentions (e.g. 'claim id 12345', 'member number 789')
+   - Note fields (e.g. 'add note explaining delay')
+   - Search boxes (e.g. 'search for smith')
+
+3. Auto-detect PRESS for:
+   - Function keys (e.g. 'f3', 'f4')
+   - Key combinations (e.g. 'ctrl o', 'ctrl s')
+   - Common keys (e.g. 'enter', 'escape')
+
+CRITICAL: ACTION TIMING
+1. Sequence Rules:
+   - No two actions can share the same frame number
+   - Keyboard actions (PRESS, ENTER) require 2-frame minimum gap
+   - Mouse actions (CLICK, DOUBLE CLICK) can be sequential
+   - When multiple actions occur at once, prioritize in order:
+     a) Mouse interactions (CLICK, DOUBLE CLICK)
+     b) Keyboard input (PRESS, ENTER)
+     c) System responses (VERIFY)
+
+Rules:
+1. Only record actions that modify software state
+2. Use first frame when action spans multiple frames
+3. For simultaneous actions, follow prioritization above
+4. Ignore frames containing only:
+  - Social conversation
+  - Introductions
+  - Mouse movements without clicks
+  - Loading states
+  - Duplicate actions
+
+Return JSON array in EXACTLY this format:
+{
+    ""interactions"": [
+        {
+            ""frame_number"": integer,
+            ""action_verb"": string,
+            ""action_target"": string,
+            ""action_value"": string|null,
+            ""context"": string|null,
+            ""implicit"": boolean    // true if action was inferred from context
+        }
+    ]
+}
+
+Example:
+{
+    ""interactions"": [
+        {
+            ""frame_number"": 120,
+            ""action_verb"": ""ENTER"",
+            ""action_target"": ""[Claim ID]"",
+            ""action_value"": ""CLAIM123"",
+            ""context"": ""Entering standard test claim"",
+            ""implicit"": false
+        },
+        {
+            ""frame_number"": 122,
+            ""action_verb"": ""PRESS"",
+            ""action_target"": ""[Enter]"",
+            ""action_value"": null,
+            ""context"": null,
+            ""implicit"": true,
+            ""original_text"": ""then enter""
+        }
+    ]
+}
+
+IMPORTANT:
+- Use EXACTLY the action verbs defined above
+- Include all UI element names in [brackets]
+- Only include ""context"" when speech provides necessary action context
+- Each action must be atomic and independently executable
+- Mark any inferred actions with implicit:true
+- RETURN ONLY THE JSON ARRAY, NO OTHER TEXT
